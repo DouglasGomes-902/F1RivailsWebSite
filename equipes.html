@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivalidades na Fórmula 1</title>
+    <link rel="icon" href="img/logo-F1.png" type="image/jpg">
+
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Barra de navegação */
+        .navbar {
+            background-color: #dc3545;
+            /* Vermelho */
+        }
+
+        /* Links da barra de navegação */
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links da barra de navegação quando ativos */
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            /* Branco */
+            font-weight: bold;
+        }
+
+        /* Corpo da página */
+        body {
+            background-color: #f8f9fa;
+            /* Cinza claro */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container principal */
+        .container {
+            flex: 1;
+        }
+
+        /* Card */
+        .card {
+            background-color: #fff;
+            /* Branco */
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        /* Ao passar o mouse sobre o card */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #212529;
+            /* Preto */
+            color: #fff;
+            /* Branco */
+            width: 100%;
+        }
+
+        /* Links do rodapé */
+        footer a {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links do rodapé quando passados */
+        footer a:hover {
+            color: #ccc;
+            /* Cinza claro */
+        }
+
+        /* Cards clicáveis */
+        .card:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <!-- Adicionando a imagem como logo -->
+                <img src="img/logo-F1.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="equipes.html">Equipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pilotos.html">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Circuitos.html">Circuitos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Vídeo capa -->
+    <div class="card mb-3">
+        <video src="videos/Welcome to Formula 1.mp4" autoplay loop muted type="video/mp4" alt="..."></video>
+    </div>
+
+    <!-- Conteúdo principal -->
+            <!-- Conteúdo principal -->
+            <div class="container mt-4">
+                <h1 style="text-align: center;">Grandes Equipes</h1>
+                <hr>
+                <hr>
+                <!-- Cards das equipes -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" style="text-align: center;">
+                    <!-- Cada card de equipe -->
+                    <!-- Card 1 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/ferrari 2.jpg" class="card-img-top" style="height: 500px;" alt="Ferrari">
+                            <div class="card-body">
+                                <h5 class="card-title">Ferrari</h5>
+                                <p class="card-text">Considerada formalmente a equipe mais importante, Scudeira Ferrari, equipe e empresa italiana, é uma das mais velhas
+                                    á estar na Fomrula 1. Sua participação na Formula 1 que por sua causa o esporte existe até os dias de hoje, e por isso, todas as equipes
+                                    assinaram um acordo reconhecendo tamanha importância.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/maclaren 2.jpg" class="card-img-top" style="height: 500px;" alt="Mac Laren">
+                            <div class="card-body">
+                                <h5 class="card-title">Mac Laren</h5>
+                                <p class="card-text">Uma das equipes mais velhas e com mais títulos, Mac Laren, foi escola de muitos pilotos e detentora de muitos titulos e carros
+                                    iconicos. Seu augê foi com Ayrton Senna e Prost na equipe, ambos pilotando o iconico MP4/4, responsaveis pela a disputada assirada e por levar
+                                    os títulos 80 e 90 pra casa da equipe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/mercedes.jpg" class="card-img-top" style="height: 500px;" alt="Mercedes">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes</h5>
+                                <p class="card-text">Equipe um pouco mais recente, Mercedes, era uma das antigas patrocinadoras da Maclaren, saiu e virou uma equipe dentro da Formula 1.
+                                    Mas com seus próprios pilotos, conquistará seus próprios títulos, e foi a casa de pilotos iconicos; NIki, Hamilton, alonso.
+                                    Com 7 títulos mundiais apenas com o seu piloto mais velho de casa Lewis Hamilton.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/williams.webp" class="card-img-top" style="height: 500px;" alt="Williams">
+                            <div class="card-body">
+                                <h5 class="card-title">Williams</h5>
+                                <p class="card-text">Também uma das equipes mas velhas no esporte, Williams, foi muito imponente no passado, desafiando todas as
+                                    equipes na pista. Por ser também uma montadores, os seus carros usavam motor próprios, assim garantido uma melhor qualidade de
+                                    neles. Pilotos iconicos passaram por ela, sendo a mesma a última equipe que Ayrton Senna entrou.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/redbull.png" class="card-img-top" style="height: 500px;" alt="Red Bull">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Bull</h5>
+                                <p class="card-text">Equipe que também entrou mais tarde no esporte porém conquistou muito coisa em pouco tempo, Red Bull, sempre com
+                                    carros bons e veloz foi sempre um desafio porém nunca uma ameça, pelo menos a 5 anos atras. Mesmo perído que a equipe acertou e muito
+                                    com piloto e engenheiro, passando por ela; Albon, Ricardo, Vettel, mas o grande prodigio Verstappen entrará para fazer histórica, ganhando
+                                    os ultimos 3 campeonados pela a equipe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="img/alfaromeo1.jpg" class="card-img-top" style="height: 500px;" alt="Alfa Romeo.">
+                            <div class="card-body">
+                                <h5 class="card-title">Alfa Romeo.</h5>
+                                <p class="card-text">Alfa Romeo, antiga equipe, e parte da Scudeira Ferrari, foi casa de muitos pilotos, e apesa de fazer parte
+                                    da Ferrari nunca foi muito longe em títulos. No passado obteve mais conquista, mas com o tempo foi ficando para atrás do grid
+                                    e apenas servindo de entrada de pilotos, e alguns foram para a Ferrari como o Charles Leclerc por exemplo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        <p>&copy; 2024 Site de Fórmula 1. Todos os direitos reservados.</p>
+        <p>
+            <a href="politicas.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+    </footer>
+
+    <!-- Scripts do Bootstrap (requer jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

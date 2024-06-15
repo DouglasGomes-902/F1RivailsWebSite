@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivalidades na Fórmula 1</title>
+    <link rel="icon" href="img/logo-F1.png" type="image/jpg">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Barra de navegação */
+        .navbar {
+            background-color: #dc3545;
+            /* Vermelho */
+        }
+
+        /* Links da barra de navegação */
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links da barra de navegação quando ativos */
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            /* Branco */
+            font-weight: bold;
+        }
+
+
+        /* Container principal */
+        .container {
+            flex: 1;
+        }
+
+        /* Card */
+        .card {
+            background-color: #fff;
+            /* Branco */
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            justify-content: center;
+        }
+
+        /* Ao passar o mouse sobre o card */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #212529;
+            /* Preto */
+            color: #fff;
+            /* Branco */
+            width: 100%;
+        }
+
+        /* Links do rodapé */
+        footer a {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links do rodapé quando passados */
+        footer a:hover {
+            color: #ccc;
+            /* Cinza claro */
+        }
+
+        /* Cards clicáveis */
+        .card:hover {
+            cursor: pointer;
+        }
+
+        /* Corpo da página */
+        body {
+            background-color: #f8f9fa;
+            /* Cinza claro */
+        }
+
+        /* Calendário */
+        .calendar {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .calendar th,
+        .calendar td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .calendar th {
+            background-color: #343a40;
+            /* Preto escuro */
+            color: #fff;
+            /* Branco */
+        }
+
+        .calendar td {
+            background-color: #fff;
+            /* Branco */
+        }
+
+        .calendar td.today {
+            background-color: #ffc107;
+            /* Amarelo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <!-- Adicionando a imagem como logo -->
+                <img src="img/logo-F1.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipes.html">Equipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pilotos.html">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Circuitos.html">Circuitos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Conteúdo principal -->
+    <div class="card " style="justify-content: center;">
+        <div class="card-body" style="text-align: center;">
+            <img src="img/F1_Circuit-Map_Monaco_Goo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mônaco</h5>
+                <p class="card-text">Situado no monte Carlos, Mônaco é um dos circuitos mais antigo e importantes do
+                    atual calendário da F1.Foi palco para
+                    para muitas disputas aciradas, e recordes históricos do esporte, Ayrton Senna era conhecido pelos
+                    seus recordes na pista, considerado até hoje como o rei de Mônaco por tais feitos.
+                    Pista de baixas velocidades e estreita, fermentou disputas incrveis como as de Ayrton contra Prost
+                    em 1993, e ainda é o maior vencedor da pista com 6 títulos. </p>
+                <a href="https://youtu.be/auXfAHHNSFo?si=CPMfh2P8_G81o4_D" target="_blank"><button type="button" 
+                    class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+                        
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="justify-content: center;">
+        <div class="card-body" style="text-align: center;">
+            <img src="img/Suzuka.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Suzuka</h5>
+                <p class="card-text">O lendária circuito japones, Suzuka, sinuoso e de altas velocidade, foi palco do
+                    maior embate e conquista de um piloto não jopones
+                    no circuito. Senna no augê da disputa contra Prost, largando em segundo lugar, bate em Prost nas
+                    primeira voltas, tirando-o da corrida, Ayrton recebeu ordens
+                    da direção de prova (FIA) para que abandonasse a corrida também, porém , Ayrton se negou a cumpri,
+                    foi pros boxes, trocou a asa dianteira e voltou para corrida.
+                    Naquele momento ele selava a disputa contra Prost e conquistava os japoneses com a sua afronta.
+                </p>
+                <a href="https://www.youtube.com/watch?v=GiTQ9PEbBBA" target="_blank"><button type="button" 
+                    class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="justify-content: center;">
+        <div class="card-body" style="text-align: center;">
+            <img src="img/interlagos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Interlargos</h5>
+                <p class="card-text">Única, circuito de Interlagos em São Paulo, desafiava todos os pilotos, curvas de
+                    altas e baixas, e 2 retas, pista toda sinuosa
+                    e de clima instavel, sempre mudando durante a corrida desafiando também os estrategistas. Marcada
+                    pra sempre pela a vitória de Senna que perdeu parte da
+                    caixa de cambio e fez todo terço final apenas na sexta marcha, sem as demais, finalizou a corrida
+                    exausto e emocionado por vencer em casa. Foi palco também
+                    da incrível homenagem de Hamilton ao piloto favorito dele Senna, finalizando a corrida de 2021, na
+                    ultima volta com a badeira do brasil, assim como seu ídolo Senna fez.
+                </p>
+                <a href="https://www.youtube.com/watch?v=V-nPjHurBgA" target="_blank"><button type="button" 
+                    class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="justify-content: center;">
+        <div class="card-body" style="text-align: center;">
+            <img src="img/monza.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Monza</h5>
+                <p class="card-text">Monza, circuito italiano, relativamente nova, de retas de altas velocidades e
+                    pontos de ultrapassagens especificas e pontos estreitos.
+                    Foi palco para uma das maiores colisões entre lideres de campeonato. Hamilton e Verstappen
+                    disputando a liderença do campeonado de 2021, Verstappen lutando
+                    pelo o seu primeiro título, á flor da pele, e Hamilton a trás de seu oitavo título, batem entre a
+                    curva 1 e a 2 depois do Hamilton sair dos boxes. Resultando assim em
+                    em um dos acidentes mais estranhos da F1, terminando com o carro do Verstappenindo parar em cima do
+                    carro do Hamilton, tirando assim, os da corrida (DNF).
+                </p>
+                <a href="https://www.youtube.com/watch?v=_VSwwZYDW94" target="_blank"><button type="button" 
+                    class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="justify-content: center;">
+        <div class="card-body" style="text-align: center;">
+            <img src="img/ABuDhabi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Abu Dhabi</h5>
+                <p class="card-text">Capital dos Emirados Árebes, Abu Dhabi, foi palco do maior encerramento de dispotas
+                    entre lideres do campeonado, em 2021, Hamilton e Verstappen
+                    á uma vitória do título, decidiam tudo naquele corrida. Hamilton liderou a corrida por completo,
+                    exceto nas ultimas voltas, em um controverso Safyt Car, a liderença
+                    de Hamilton, diminui, Verstappen é chamado para os boxes quase que instataneamente para a troca de
+                    pneus, aproveitando o safyt car causado por uma batida estranha de
+                    um dos pilotos de fim de pilotão (final do grid), enquanto que Hamilton, não conseguiu ir para os
+                    boxes assim como outros pilotos, ele também estava com peneus gastos
+                    e com o Verstappen colado nele com peneus macios (faixa vermelha), e novos. Assim conseguindo passar
+                    Hamilton com tranquilidade na útilma volta e conquistando seu primeiro
+                    título mundial de Formula 1.
+                </p>
+                <a href="https://www.youtube.com/watch?v=MTe12fH2xtQ" target="_blank"><button type="button"
+                     class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Site de Fórmula 1. Todos os direitos reservados.</p>
+        <p>
+            <a href="politicas.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+    </footer>
+
+
+
+    <!-- Scripts do Bootstrap (requer jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

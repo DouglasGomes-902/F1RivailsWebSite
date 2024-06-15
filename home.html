@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivalidades na Fórmula 1</title>
+    <link rel="icon" href="img/logo-F1.png" type="image/jpg">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Barra de navegação */
+        .navbar {
+            background-color: #dc3545;
+            /* Vermelho */
+        }
+
+        /* Links da barra de navegação */
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links da barra de navegação quando ativos */
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            /* Branco */
+            font-weight: bold;
+        }
+
+        /* Corpo da página */
+        body {
+            background-color: #f8f9fa;
+            /* Cinza claro */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container principal */
+        .container {
+            flex: 1;
+        }
+
+        /* Card */
+        .card {
+            background-color: #fff;
+            /* Branco */
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        /* Ao passar o mouse sobre o card */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #212529;
+            /* Preto */
+            color: #fff;
+            /* Branco */
+            width: 100%;
+        }
+
+        /* Links do rodapé */
+        footer a {
+            color: #fff;
+            /* Branco */
+        }
+
+        /* Links do rodapé quando passados */
+        footer a:hover {
+            color: #ccc;
+            /* Cinza claro */
+        }
+
+        /* Cards clicáveis */
+        .card:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <!-- Adicionando a imagem como logo -->
+                <img src="img/logo-F1.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipes.html">Equipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pilotos.html">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Circuitos.html">Circuitos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Vídeo capa -->
+    <div class="card mb-3">
+        <video src="img/Clip-Montage.mp4" autoplay loop muted type="video/mp4" alt="Cipes momentos emocionantes"></video>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-4">
+        <h1>Rivalidades na Fórmula 1</h1>
+        <div class="row">
+            <!-- Card 1: Senna vs. Prost -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card" style="text-align: center;">
+                    <img src="img/senna-vs-prost.jpg"  class="card-img-top" style="max-height: 240px;" alt="Ayrton Senna vs. Alain Prost">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayrton Senna VS Alain Prost</h5>
+                        <p class="card-text">Uma das rivalidades mais intensas na história da Fórmula 1, Senna e Prost competiram
+                             ferozmente nas décadas de 1980 e 1990.</p>
+                             <a href="pilotos.html"><button type="button" class="btn btn-danger" style="color: #212529; margin-top: 140px;">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Hamilton vs. Verstappen -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card" style="text-align: center;">
+                    <img src="img/Lewis-Hamilton-max-Verstappen.jpg" class="card-img-top" style="max-height: 240px;" alt="Lewis Hamilton vs. Max Verstappen">
+                    <div class="card-body">
+                        <h5 class="card-title">Lewis Hamilton VS Max Verstappen</h5>
+                        <p class="card-text">Uma das rivalidades mais recentes e intensas na Fórmula 1, Hamilton e Verstappen competem na pista
+                             com agressividade e habilidade, mantendo os fãs na borda de seus assentos.</p>
+                             <a href="pilotos.html"><button type="button" class="btn btn-danger" style="color: #212529; margin-top: 120px;">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Alonso vs. Hamilton -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card" style="text-align: center;">
+                    <img src="img/R.jpg" class="card-img-top" style="max-height: 240px;" alt="Fernando Alonso vs. Lewis Hamilton">
+                    <div class="card-body">
+                        <h5 class="card-title"> Alonso  VS Hamilton</h5>
+                        <p class="card-text">A rivalidade entre Alonso e Hamilton começou em 2007, quando ambos eram companheiros de
+                             equipe na McLaren. A competição acirrada marcou uma das temporadas mais emocionantes da Fórmula 1.</p>
+                             <a href="pilotos.html"><button type="button" class="btn btn-danger" style="color: #212529; margin-top: 120px;">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <hr><hr>
+            <!--Incorp de dois videos externos-->
+            <div class="container">
+                <h1 style="text-align: center;">Últimas Corridas</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MukkwyQcXUw?si=KCktmIOQcEKM607l"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <hr>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tomPqNoHYyU?si=GkK8vmW80DMztZRx" title="YouTube video player" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!--Calendário-->
+            <div class="container mt-2">
+                <h1 class="text-center mb-4">Próximas Corridas</h1>
+                <div class="calendar" style="text-align: center;">
+                    <table class="table table-bordered" >
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Evento</th>
+                                <th>Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="today">21/06/2024</td>
+                                <td>GP da Espanha</td>
+                                <td>Circuit de Catalunya, Barcelona</td>
+                            </tr>
+                            <tr>
+                                <td>28/06/2024</td>
+                                <td>GP da Áustria</td>
+                                <td>Red Bull Ring, Spielberg, Áustria</td>
+                            </tr>
+                            <tr>
+                                <td>07/07/2024</td>
+                                <td>GP da Grã-Bretanha</td>
+                                <td>Circuito de Silverstone, Silverstone, Reino Unido</td>
+                            </tr>
+                            <tr>
+                                <td>21/07/2024</td>
+                                <td>GP da Hungria</td>
+                                <td>Hungaroring</td>
+                            </tr>
+                            <tr>
+                                <td>28/07/2024</td>
+                                <td>GP da Bélgica</td>
+                                <td>Circuit de Spa-Francorchamps</td>
+                            </tr>
+                            <tr>
+                                <td>25/08/2024</td>
+                                <td>GP dos Países Baixos</td>
+                                <td>Circuit Park Zandvoort</td>
+                            </tr>
+                            <tr>
+                                <td>01/09/2024</td>
+                                <td>GP da Itália</td>
+                                <td>Autodromo Nazionale Monza</td>
+                            </tr>
+                            <tr>
+                                <td>15/09/2024</td>
+                                <td>GP do Azerbaijão</td>
+                                <td>Baku City Circuit</td>
+                            </tr>
+                            <tr>
+                                <td>22/09/2024</td>
+                                <td>GP de Singapura</td>
+                                <td>Marina Bay Street Circuit</td>
+                            </tr>
+                            <tr>
+                                <td>20/10/2024</td>
+                                <td>GP dos Estados Unidos</td>
+                                <td>Circuit of the Americas</td>
+                            </tr>
+                            <tr>
+                                <td>27/10/2024</td>
+                                <td>GP da Cidade do México</td>
+                                <td>Autodromo Hermanos Rodriguez</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  <a href="https://www.formula1.com" ><button type="button" class="btn btn-danger" style="color: #212529;">Site Oficial F1</button></a>
+                </div>
+            </div>
+
+            <hr><hr>
+            <h2>Circuitos Famosos</h2>
+            <div class="row">
+                <!-- Card 1: Mônaco -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="text-align: center;">
+                        <img src="img/F1_Circuit-Map_Monaco_Goo.jpg" class="card-img-top" alt="Circuito de Mônaco">
+                        <div class="card-body">
+                            <h5 class="card-title">Circuito de Mônaco</h5>
+                            <p class="card-text">Conhecido por suas ruas estreitas e desafiadoras, Mônaco é um dos circuitos mais icônicos da Fórmula 1.</p>
+                            <button type="button" class="btn btn-danger" style="color: #212529;">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Silverstone -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="text-align: center;">
+                        <img src="img/Silverstone.jpg" class="card-img-top" alt="Circuito de Silverstone">
+                        <div class="card-body">
+                            <h5 class="card-title">Circuito de Silverstone</h5>
+                            <p class="card-text">O berço do Grande Prêmio Britânico, Silverstone é famoso por suas curvas rápidas e história rica.</p>
+                            <button type="button" class="btn btn-danger" style="color: #212529;">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Suzuka -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="text-align: center;">
+                        <img src="img/Suzuka.jpg" class="card-img-top" alt="Circuito de Suzuka">
+                        <div class="card-body">
+                            <h5 class="card-title">Circuito de Suzuka</h5>
+                            <p class="card-text">Localizado no Japão, Suzuka é conhecido por seu layout único em forma de "8" e desafios técnicos.</p>
+                            <a href="Circuitos.html"><button type="button" class="btn btn-danger" style="color: #212529;">Saiba Mais</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        <p>&copy; 2024 Site de Fórmula 1. Todos os direitos reservados.</p>
+        <p>
+            <a href="politicas.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+    </footer>
+
+    <!-- Scripts do Bootstrap (requer jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
